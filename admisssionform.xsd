@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="Admission" >
+<xs:complexType>
+<xs:sequence>
+<xs:element name="personalInfo">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="name" type="xs:string"></xs:element>
+<xs:element name="gender" type="xs:string"></xs:element>
+<xs:element name="DOB" type="xs:string"></xs:element>
+<xs:element name="fathername" type="xs:string"></xs:element>
+<xs:element name="mothername" type="xs:string"></xs:element>
+<xs:element name="email" type="xs:string"></xs:element>
+<xs:element name="phone" type="xs:string"></xs:element>
+<xs:element name="language" type="xs:string"></xs:element>
+<xs:element name="bloodgroup" type="xs:string"></xs:element>
+<xs:element name="address">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="houseno" type="xs:string"></xs:element>
+<xs:element name="state" type="xs:string"></xs:element>
+<xs:element name="city" type="xs:string"></xs:element>
+<xs:element name="pincode" type="xs:integer"></xs:element>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+<xs:element name="board" type="xs:string"></xs:element>
+<xs:element name="college" type="xs:string"></xs:element>
+<xs:element name="percentage" type="xs:string"></xs:element>
+<xs:element name="acquiredmarks" type="xs:integer"></xs:element>
+ 
+<xs:element name="Totalmarks" type="xs:integer"></xs:element>
+
+</xs:sequence>
+</xs:complexType>
+
+</xs:element>
+</xs:sequence>
+</xs:complexType>
+
+ </xs:element>
+
+</xs:schema>
