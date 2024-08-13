@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+TODO define vocabulary identification PUBLIC ID: -//vendor//vocabulary//EN
+SYSTEM ID: http://server/path/Admssionform.dtd
+
+-->
+
+<!--
+An example how to use this DTD from your XML document:
+
+<?xml version="1.0"?>
+
+<!DOCTYPE Admission SYSTEM "Admssionform.dtd">
+
+<Admission>
+...
+</Admission>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT Admission (personalInfo)*>
+<!ATTLIST Admission xmlns:xs CDATA #IMPLIED
+xs:noNamespaceSchemaLocation CDATA #IMPLIED
+>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT personalInfo (address|name|gender|DOB|fathername|Totalmarks|mothername|email|acquiredmarks|phone|c ollege|language|bloodgroup|board|percentage)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT name (#PCDATA)>
+ 
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT gender (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT DOB (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+ <!ELEMENT fathername (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT mothername (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT email (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT phone (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT language (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT bloodgroup (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT address (houseno|state|city|pincode)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT houseno (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT state (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT city (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT pincode (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT board (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT college (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT percentage (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+ 
+<!ELEMENT acquiredmarks (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+ <!ELEMENT Totalmarks (#PCDATA)>
+
