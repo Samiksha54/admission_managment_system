@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Admission xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="Admissionform.xsd">
+<personalInfo>
+<name>Rahul</name>
+<gender>male</gender>
+<DOB>24-3-2001</DOB>
+<fathername>Sharan</fathername>
+<mothername>sunita</mothername>
+<email>rahul@gmail.com</email>
+<phone>+91-6789034544</phone>
+<language>kannada</language>
+<bloodgroup>B+</bloodgroup>
+ 
+<address>
+<houseno>house no.34</houseno>
+<state>karnataka</state>
+<city>Mysuru</city>
+<pincode>581400</pincode>
+</address>
+<board>CBSE</board>
+<college>j.v pu college</college>
+<percentage>89%</percentage>
+ <acquiredmarks>420</acquiredmarks>
+<Totalmarks>500</Totalmarks>
+</personalInfo>
+</Admission>
