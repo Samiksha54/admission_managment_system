@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admission Form</title>
+</head>
+ <body>
+<div style="color: brown; background-color:beige; padding:100px; margin:80px; border- radius:50px;font-style: italic;font-size:x-large;font-style: inherit;">
+<form id="admissionForm" action="update.php" method="POST">
+<div style="font-size:xx-large;font-weight: 400;margin-bottom: 25px;">Admission Form update</div>
+<fieldset>
+<legend>Personal information</legend>
+<table>
+<tr>
+<td><label>Name:</label></td>
+<td><input type="text" id="txtname" name="txtname" placeholder="Enter name ex:abc d.h"></td>
+</tr>
+<tr>
+<td><label>Admission no:</label></td>
+<td><input type="number" id="txtadno" name="txtadno"></td>
+</tr>
+<tr>
+<td><label>Select Gender :</label></td>
+<td>
+<input type="radio" name="rdgender" value="Male">Male
+<input type="radio" name="rdgender" value="Female">Female
+<input type="radio" name="rdgender" value="Other">Other
+</td>
+</tr>
+<tr>
+<td><label>DOB:</label></td>
+<td><input type="date" id="dtdob" name="dtdob"></td>
+</tr>
+<tr>
+<td><label>Father's name:</label></td>
+<td><input type="text" id="fathername" name="fathername"></td>
+</tr>
+<tr>
+<td><label>Mother's name:</label></td>
+<td><input type="text" id="mothername" name="mothername"></td>
+</tr>
+<tr>
+<td><label>Phone number:</label></td>
+<td><input type="text" id="phnumber" name="phnumber"></td>
+ 
+</tr>
+<tr>
+<td><label>Email:</label></td>
+<td><input type="text" id="txtemail" name="txtemail"></td>
+</tr>
+<tr>
+<td><label>Select languages known :</label></td>
+<td>
+<input type="checkbox" name="chklan[]" value="Kannada">Kannada
+ <input type="checkbox" name="chklan[]" value="English">English
+<input type="checkbox" name="chklan[]" value="Hindi">Hindi
+</td>
+</tr>
+<tr>
+<td><label>Blood group:</label></td>
+<td><input type="text" id="txtbloodgroup" name="txtbloodgroup"></td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend>Address</legend>
+<table>
+<tr>
+<td><label>Enter Permanent Address:</label></td>
+<td><textarea id="txtaddress" name="txtaddress"></textarea></td>
+</tr>
+<tr>
+<td><label>Select State</label></td>
+<td>
+<select id="SeleState" name="SeleState">
+<option value="0">--Select State--</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Kerala">Kerala</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label>City</label></td>
+<td><input type="text" id="txtcity" name="txtcity"></td>
+</tr>
+<tr>
+<td><label>Pin code</label></td>
+<td><input type="text" id="txtcode" name="txtcode"></td>
+</tr>
+</table>
+</fieldset>
+
+<fieldset>
+ 
+<legend>Academics</legend>
+<table>
+<tr>
+<td><label>Board:</label></td>
+<td>
+<select id="txtboards" name="txtboards">
+<option value="0">--Select Board--</option>
+<option value="State">State</option>
+<option value="CBSE">CBSE</option>
+ <option value="ICSE">ICSE</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label>College name:</label></td>
+<td><input type="text" id="txtcollege" name="txtcollege"></td>
+</tr>
+<tr>
+<td><label>Percentage:</label></td>
+<td><input type="text" id="txtpercent" name="txtpercent"></td>
+</tr>
+<tr>
+<td><label>Acquired marks:</label></td>
+<td><input type="text" id="txtmarks" name="txtmarks"></td>
+</tr>
+<tr>
+<td><label>Total marks:</label></td>
+<td><input type="text" id="txttotmarks" name="txttotmarks"></td>
+</tr>
+<tr>
+<td><label>Select Operation Type:</label></td>
+<td>
+<select name="ddlCRUDOp">
+<option>-Select Operation Type-</option>
+<option value="Create/Insert">Create/Insert</option>
+<option value="Read/Display">Read/Display</option>
+<option value="Update">Update</option>
+<option value="Delete">Delete</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><input type="submit" name="btnsubmit" value="Submit"></td>
+</tr>
+</table>
+</fieldset>
+</form>
+</div>
+</body>
+ 
+ </html>
